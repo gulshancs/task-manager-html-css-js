@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ✅ Center Heading -->
+  <h1 class="main-heading">📝 Task Manager</h1>
+
+  <h3>Add a New Task</h3>
+
+  <input type="text" id="title" placeholder="Task Title..." maxlength="80">
+  <textarea id="desc" placeholder="Description..."></textarea>
+
+  <div class="row">
+    <select id="priority">
+      <option value="Low">🟢 Low</option>
+      <option value="Medium" selected>🟡 Medium</option>
+      <option value="High">🔴 High</option>
+    </select>
+
+    <input type="date" id="date">
+  </div>
+
+  <!-- ✅ Button text change when editing -->
+  <button id="submitBtn" onclick="addTask()">+ Add Task</button>
+
+  <hr>
+
+  <input type="text" id="search" placeholder="Search tasks..." onkeyup="renderTasks()">
+
+  <div class="filters">
+    <button onclick="filter='all'; renderTasks()">All</button>
+    <button onclick="filter='pending'; renderTasks()">Pending</button>
+    <button onclick="filter='completed'; renderTasks()">Completed</button>
+  </div>
+
+  <div id="taskList"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

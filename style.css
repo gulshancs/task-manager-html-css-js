@@ -1,0 +1,61 @@
+body {
+  font-family: Arial;
+  background: #f4f6f9;
+}
+
+.main-heading {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #0a0544;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  background: rgb(162, 224, 238);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+input, textarea, select {
+  width: 96.5%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: #0ed263;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.task {
+  background: #f9fafb;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task button {
+  width: auto;
+  margin-right: 5px;
+  padding: 5px;
+}
