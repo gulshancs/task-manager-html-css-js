@@ -1,6 +1,6 @@
 body {
   font-family: Arial;
-  background: #f4f6f9;
+  background: #010101;
 }
 
 .main-heading {
@@ -12,7 +12,7 @@ body {
 .container {
   width: 600px;
   margin: auto;
-  background: rgb(162, 224, 238);
+  background: #f2f6f6;
   padding: 20px;
   border-radius: 20px;
   margin-top: 30px;
@@ -35,7 +35,7 @@ button {
   margin-top: 10px;
   width: 100%;
   padding: 10px;
-  background: #0ed263;
+  background: #01a046;
   color: white;
   border: none;
   border-radius: 6px;
